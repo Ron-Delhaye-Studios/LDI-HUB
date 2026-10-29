@@ -1,0 +1,28 @@
+[PAYLOAD ID: LDI-HUB-005]
+[TO: THALEIA + MASTER INDY]
+[SUBJECT: Payload Hub build and deployment status]
+
+BUILD: Complete. Next.js static export configured for /LDI-HUB/.
+SUPABASE: Connected public project URL and anon client key configured.
+RLS: Corrected email case matching and removed unsafe browser privileges.
+VERIFIED: Static production build, TypeScript, isolated RLS tests, and audit.
+LIVE DATABASE: Anonymous REST reads denied for all three tables. Owner CRUD
+passed using simulated JWT claims with every test change rolled back.
+AUTH VERIFIED: Real owner password sign-in and REST reads on all three tables passed.
+Verification session signed out. Temporary setup endpoint disabled (HTTP 410).
+LIMIT: No browser interaction test completed.
+OWNER: RonDelhayeStudios@gmail.com. Account created and email-confirmed via Admin API.
+GITHUB: Ron-Delhaye-Studios/LDI-HUB created; write access verified.
+DEPLOYMENT: Source prepared; GitHub Actions deployment in progress.
+
+Required next steps:
+1. Repository is created with main initialized.
+2. Connected GitHub access verified; deploy through the included Pages workflow.
+3. Commit this source at repository root; included workflow builds and deploys.
+4. Owner account is ready. Retrieve credentials privately from Master Indy.
+5. Verify the live URL, sign in, and exercise projects, payload editing and filters.
+
+No account password or service-role credential is included in the package.
+No application tables or data were recreated or deleted.
+
+AD ASTRA PROCEDAMUS.
